@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.3.2015, 0:29:40
+    Author     : Defu
+*/
+
+html{
+    height: 100%;
+        
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+    height: inherit;
+    font-family: arial;
+}
+
+#playerarea {
+    width: 70%;
+    height: inherit;
+    float: left;
+    background-color: #cccccc;
+    padding: 20px;
+}
+
+#player {
+    width: 100%;
+}
+
+#listarea {
+    width: 30%;
+    height: inherit;
+    float: right;
+    background-color: #999999;
+}
+
+ul.videolist {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+.listitem {
+    width: 100%;
+    background-color: #aaaaaa;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.listimage {
+    width: 30%;
+    height: 100%;
+    float:left;
+}
+
+.listinfo {
+    width: 70%;
+    height: 100%;
+    padding-left: 5px;
+    float:left;
+    
+    font-size: 12px;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+.listtitle {
+    width: 80%;
+    float: left;
+}
+.listdeletebutton {
+    height: inherit;
+    width: 20%;
+    float: right;
+    vertical-align: center;
+}

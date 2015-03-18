@@ -1,0 +1,28 @@
+<div id="playerarea">
+    <div id="player"></div>
+</div>
+        
+<div id="listarea" ng-controller="ytList">
+
+    <div class="videosearch" style="margin:20px;">
+        Add ID: <input ng-model="add.idstring" />
+        <button ng-click="submit(add)">Submit</button>
+    </div>
+
+    <ul class="videolist">
+        <li ng-repeat="queue in playQueInfos track by $index">
+
+            <div class="listitem">
+                <div class="listimage"><img ng-src="{{queue.thumbnail.sqDefault}}" /></div>
+                <div class="listinfo">
+                    <div class="listtitle">{{queue.title}}</div>
+                    <div class="listdeletebutton" ng-click="deleteFromQueue($index)">Delete</div>
+
+                </div>
+                <br style="clear:both;" />
+            </div>
+        </li>
+
+    </ul>
+</div>
+<br style="clear:both;" />
